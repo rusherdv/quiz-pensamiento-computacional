@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {BsFillCheckCircleFill, BsXCircleFill} from 'react-icons/bs'
 import data from '../../data/data.json'
+import { Link } from 'react-router-dom'
 
 const Result = () => {
 
@@ -93,20 +94,26 @@ const Result = () => {
         {
             state === 'Desaprobado' ?
             <>
-                <div onClick={getResult} className="w-10/12 h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
-                  <h3 className="inter400">Reintentar</h3>
+              <Link to="/quiz" className="w-10/12">
+                <div className="w-full max-2xl:text-sm max-lg:text-xs h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
+                  <h3>Reintentar</h3>
                 </div>
+              </Link>
             </>
             :
             <>
             </>
         }
-        <div onClick={() => {window.location.href = 'http://localhost:5173/tips'}} className="w-10/12 h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
-          <h3>Tips</h3>
-        </div>
-        <div onClick={() => {window.location.href = 'http://localhost:5173/'}} className="w-10/12 h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
-          <h3>Volver al menu</h3>
-        </div>
+        <Link to="/tips" className="w-10/12">
+          <div className="w-full max-2xl:text-sm max-lg:text-xs h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
+            <h3>Tips</h3>
+          </div>
+        </Link>
+        <Link to="/" className="w-10/12">
+            <div className="w-full max-2xl:text-sm max-lg:text-xs h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
+              <h3>Volver al menu</h3>
+            </div>
+        </Link>
       </div>
       <p className="inter400 text-xs text-white mb-5 mt-5">Powered by rusher</p>
     </div>

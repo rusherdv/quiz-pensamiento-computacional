@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import { Link } from 'react-router-dom'
 
 const Menu = () => {
 
@@ -13,12 +14,16 @@ const Menu = () => {
         <h2 className="text-2xl inter400 text-gray-300 mb-3 max-sm:text-lg">Pensamiento computacional</h2>
       </div>
       <div className="w-full flex flex-col items-center">
-          <div onClick={() => {window.location.href = 'http://localhost:5173/quiz'}} className="w-10/12 h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
+        <Link to="/quiz" className='w-10/12'>
+          <div className="w-full h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
             <h3 className="inter400">Contestar</h3>
           </div>
-          <div onClick={() => {window.location.href = 'http://localhost:5173/tips'}} className="w-10/12 h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
-            <h3>Tips</h3>
+        </Link>
+        <Link to="/tips" className='w-10/12'>
+          <div className="w-full h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
+            <h3 className="inter400">Tips</h3>
           </div>
+        </Link>
       </div>
       <p className="inter400 text-xs text-white mb-5 mt-5">Powered by rusher</p>
     </div>

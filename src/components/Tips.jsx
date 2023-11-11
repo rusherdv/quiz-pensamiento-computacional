@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import data from '../../data/data.json'
+import { Link } from 'react-router-dom';
 
 const Tips = () => {
     
@@ -88,9 +89,11 @@ const Tips = () => {
                   <h3>Siguiente</h3>
                 </div>
               </> }
-              <div onClick={() => {window.location.href = 'http://localhost:5173/'}} className="w-full max-2xl:text-sm max-lg:text-xs h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
+              <Link to="/" className="w-full">
+                <div className="w-full max-2xl:text-sm max-lg:text-xs h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
                   <h3>Volver al menu</h3>
-              </div>
+                </div>
+              </Link>
             </div>
             <p className="inter400 text-xs text-white mb-5 mt-5">Powered by rusher</p>
         </div>

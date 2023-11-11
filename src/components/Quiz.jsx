@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link, useNavigate} from 'react-router-dom';
 import data from '../../data/data.json'
 
 const Quiz = () => {
@@ -8,6 +9,8 @@ const Quiz = () => {
     const [correctAnswer, setCorrectAnswer] = useState(null)
     const [wrongAnswer, setWrongAnswer] = useState(null)
     const [points, setPoints] = useState(0)
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         setRandomQuestion();
@@ -52,7 +55,7 @@ const Quiz = () => {
     const endQuiz = () => {
         setResult()
         setTimeout(() => {
-            window.location.href = 'http://localhost:5173/result'
+            navigate('/result');
         }, 2000);
     }
   
@@ -119,9 +122,11 @@ const Quiz = () => {
                     }
                 </div>
                 <div className='flex justify-between w-full items-center max-sm:flex-col-reverse'>
-                    <div onClick={() => window.location.href = 'http://localhost:5173/'} className={`w-[45%] max-2xl:text-sm max-lg:text-xs h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer`}>
-                        <h3>Volver al menu</h3>
-                    </div>
+                    <Link to="/" className="w-[45%]">
+                        <div className="w-full max-2xl:text-sm max-lg:text-xs h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
+                          <h3>Volver al menu</h3>
+                        </div>
+                    </Link>
                     {
                         (correctAnswer != null || wrongAnswer != null) ?
                         
