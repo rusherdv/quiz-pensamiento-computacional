@@ -51,7 +51,7 @@ const Tips = () => {
                 ended == true ?
                 <>
                   <div className='w-10/12 flex justify-center flex-col items-center'>
-                      <p className=' text-white text-md mt-2 inter600 text-center'>Perfecto, ya reviste todos los tips disponibles</p>
+                      <p className=' text-white text-md mt-2 inter600 text-center'>Perfecto, ya viste todos los tips disponibles</p>
                       <p className=' text-white text-md mt-2 inter400 text-center'>Recordá que esto es simplemente recuerdo, por lo que necesitaras leer antes</p>
                   </div>
                 </>
