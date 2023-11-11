@@ -90,7 +90,7 @@ const Result = () => {
         :
         <></>
       }
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center sm:mb-7">
         {
             state === 'Desaprobado' ?
             <>

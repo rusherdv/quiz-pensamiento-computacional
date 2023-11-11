@@ -46,7 +46,7 @@ const Tips = () => {
                 </>
               }
             </div>
-            <div className="w-10/12 flex flex-col items-center max-sm:w-11/12">
+            <div className="w-10/12 flex flex-col items-center max-sm:w-11/12 sm:mb-7">
               {
                 ended == true ?
                 <>
