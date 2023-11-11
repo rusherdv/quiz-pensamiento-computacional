@@ -121,7 +121,7 @@ const Quiz = () => {
                         </> 
                     }
                 </div>
-                <div className='flex justify-between w-full items-center max-sm:flex-col-reverse'>
+                <div className='flex justify-between w-full items-center max-sm:flex-col-reverse sm:mb-7'>
                     <Link to="/" className="w-[45%]">
                         <div className="w-full max-2xl:text-sm max-lg:text-xs h-10 text-white bg-transparent border-2 border-white flex justify-center inter400 items-center rounded-lg mt-5 hover:bg-slate-800 hover:cursor-pointer">
                           <h3>Volver al menu</h3>
