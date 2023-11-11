@@ -44,6 +44,7 @@ const Result = () => {
             <div className='w-10/12 flex flex-col justify-center items-center'>
                 <p className=' text-white text-md mt-2 text-center'>Muy bien, estas en un buen nivel, segui asi</p>
                 <p className=' text-white text-md mt-2 text-center'>Recordá que esto es simplemente una estimacion, y no confirma que vayas a aprobar el final</p>
+                <p className=' text-white text-md mt-2 inter400 text-center'>Si te sirvió, apoyame siguiendome en <a href='https://www.instagram.com/fede.cabanas/' className='text-blue-500 hover:underline hover:cursor-pointer'>Instagram</a></p>
             </div>
         </>
         :
@@ -59,6 +60,7 @@ const Result = () => {
         <div className='w-10/12 flex justify-center flex-col items-center'>
             <p className=' text-white text-md mt-2 text-center'>Segui practicando, revisa los tips y volve a intentarlo! Dale que se puede loco</p>
             <p className=' text-white text-md mt-1 text-center'>Recordá que esto es simplemente una estimacion, y no confirma que no vayas a aprobar el final</p>
+            <p className=' text-white text-md mt-2 inter400 text-center'>Si te sirvió, apoyame siguiendome en <a href='https://www.instagram.com/fede.cabanas/' className='text-blue-500 hover:underline hover:cursor-pointer'>Instagram</a></p>
         </div>
         </>
         :
@@ -74,6 +76,7 @@ const Result = () => {
             <div className='w-10/12 flex flex-col justify-center items-center'>
                 <p className='text-white text-md mt-2 text-center'>Sos una maquina, no te para nadie loco</p>
                 <p className='text-white text-md mt-2 text-center'>Recordá que esto es simplemente una estimacion, y no confirma que vayas a aprobar el final</p>
+                <p className=' text-white text-md mt-2 inter400 text-center'>Si te sirvió, apoyame siguiendome en <a href='https://www.instagram.com/fede.cabanas/' className='text-blue-500 hover:underline hover:cursor-pointer'>Instagram</a></p>
             </div>
         </>
         :
@@ -85,6 +88,7 @@ const Result = () => {
         <div className='w-10/12 flex justify-center flex-col items-center'>
             <p className=' text-white text-md mt-2 inter600 text-center'>Haz el test para ver si estas preparado!</p>
             <p className=' text-white text-md mt-2 inter400 text-center'>Recordá que esto es simplemente una estimacion, y no confirma que vayas a aprobar el final</p>
+            <p className=' text-white text-md mt-2 inter400 text-center'>Si te sirvió, apoyame siguiendome en <a href='https://www.instagram.com/fede.cabanas/' className='text-blue-500 hover:underline hover:cursor-pointer'>Instagram</a></p>
         </div>
         </>
         :
