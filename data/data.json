@@ -124,7 +124,7 @@
         {
             "title": "Funciones",
             "question": "Que hace la funcion elige()?",
-            "code": "def elige(dicci):\n print('Selecciona')\nfor op in dicci:\n  print(op,'-', dicci[op])\nseleccion=input()\nwhile seleccion not in dicci:\n  seleccion=input()\nreturn seleccion\n\nmenu={'1':'Pasta',\n'2':'Pollo',\n'3':'Carne',\n'4':'Veggie'}\nopc=elige(menu)\nprint('Elegiste', menu[opc])",
+            "code": "def elige(dicci):\n  print('Selecciona')\n for op in dicci:\n  print(op,'-', dicci[op])\n seleccion=input()\nwhile seleccion not in dicci:\n  seleccion=input()\n  return seleccion\n\nmenu={'1':'Pasta','2':'Pollo',\n'3':'Carne','4':'Veggie'}\nopc=elige(menu)\nprint('Elegiste', menu[opc])",
             "response": [
                 {"index": 0, "text": "Imprime tipos de comida, ordenadas por y con numero y se puede elegir una", "status": true},
                 {"index": 1, "text": "Imprime tipos de comida y se puede elegir una", "status": false},

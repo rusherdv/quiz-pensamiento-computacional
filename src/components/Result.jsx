@@ -115,7 +115,6 @@ const Result = () => {
             </div>
         </Link>
       </div>
-      <p className="inter400 text-xs text-white mb-5 mt-5">Powered by rusher</p>
     </div>
   )
 }
