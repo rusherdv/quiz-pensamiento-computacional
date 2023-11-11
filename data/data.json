@@ -1,0 +1,191 @@
+{
+    "tips": [
+        {
+            "title": "Condiciones",
+            "tip": "Utiliza if para realizar acciones cuando una condición es verdadera, elif para una condición específica o else para acciones cuando la condición es falsa.",
+            "print": "Eres mayor de edad.",
+            "code": "edad = 18\nif edad >= 18:\n    print(\"Eres mayor de edad.\")\nelse:\n    print(\"Eres menor de edad.\")"
+        },
+        {
+            "title": "Bucles",
+            "tip": "Usa bucles for para iterar sobre secuencias y while para repetir acciones mientras una condición sea verdadera.",
+            "print": "1, 2, 3, 4, 5",
+            "code": "# Bucle for para imprimir los números del 1 al 5\nfor numero in range(1, 6):\n    print(numero)\n# Bucle while para contar desde 1 hasta 5\ncontador = 1\nwhile contador <= 5:\n    print(contador)\n    contador += 1"
+        },
+        {
+            "title": "Iteraciones",
+            "tip": "La función range() genera una secuencia de números que puedes usar en bucles for.",
+            "print": "2, 4, 6, 8, 10",
+            "code": "# Bucle for utilizando range para imprimir números pares del 2 al 10\nfor numero in range(2, 11, 2):\n    print(numero)"
+        },
+        {
+            "title": "Listas y operaciones",
+            "tip": "Las listas son colecciones ordenadas en Python que puedes modificar. Puedes añadir elementos y acceder a ellos por índices.",
+            "print": "1",
+            "code": "# Crear una lista de números y añadir un nuevo número\nnumeros = [1, 2, 3]\nnumeros.append(4)  # Ahora la lista es [1, 2, 3, 4]\n# Acceder a un elemento de la lista por su índice\nprint(numeros[0])"
+        },
+        {
+            "title": "Funciones",
+            "tip": "Las funciones son bloques de código reutilizables. Se definen con def y pueden aceptar argumentos y devolver valores.",
+            "print": "15",
+            "code": "# Definir una función para calcular el área de un rectángulo\ndef calcular_area(base, altura):\n    area = base * altura\n    return area\n\n# Llamar a la función y mostrar el resultado\nprint(calcular_area(5, 3))"
+        },
+        {
+            "title": "Diccionarios",
+            "tip": "Los diccionarios en Python son estructuras de datos que almacenan pares clave-valor. Puedes acceder a los valores mediante las claves.",
+            "print": "Edad: 25",
+            "code": "# Crear un diccionario para almacenar la edad\npersona = {'Edad': 25}\n# Acceder al valor mediante la clave\nprint(persona['Edad'])"
+        },
+        {
+            "title": "Manejo de Excepciones",
+            "tip": "Utiliza try, except para manejar excepciones y prevenir que tu programa se detenga abruptamente en caso de errores.",
+            "print": "Error: División por cero",
+            "code": "# Manejo de excepciones para evitar la división por cero\ntry:\n    resultado = 10 / 0\nexcept ZeroDivisionError:\n    print('Error: División por cero')"
+        },
+        {
+            "title": "Cadenas de Texto",
+            "tip": "Las cadenas de texto pueden concatenarse con el operador +. Utiliza f-strings para formatear cadenas de manera más legible.",
+            "print": "Hola, Juan",
+            "code": "# Concatenación de cadenas de texto\nnombre = 'Juan'\nprint('Hola, ' + nombre)\n# F-strings para formatear\nprint(f'Hola, {nombre}')"
+        },
+        {
+            "title": "Manejo de Archivos",
+            "tip": "Utiliza las funciones open(), read(), write() y close() para leer y escribir archivos en Python.",
+            "print": "Contenido del archivo:\nHola, este es un archivo de ejemplo.",
+            "code": "# Escribir en un archivo\nwith open('ejemplo.txt', 'w') as archivo:\n    archivo.write('Hola, este es un archivo de ejemplo.')\n# Leer desde un archivo\nwith open('ejemplo.txt', 'r') as archivo:\n    contenido = archivo.read()\nprint(f'Contenido del archivo:\\n{contenido}')"
+        }
+    ],
+    "quiz": [
+        {
+          "title": "Variables",
+          "code": "nombre = rusher\nprint(nombre)",
+          "question": "Que imprime este codigo?",
+          "response": [
+            {"index": 0, "text": "rusher", "status": true},
+            {"index": 1, "text": "nombre", "status": false},
+            {"index": 2, "text": "rushernombre", "status": false},
+            {"index": 3, "text": "nombrerusher", "status": false}
+          ]
+        },
+        {
+            "title": "Operadores",
+            "question": "Si a=47, cual de las siguientes condiciones da verdadero (True)",
+            "response": [
+                {"index": 0, "text": "a>=10 and a<=25 or not(a==47)", "status": false},
+                {"index": 1, "text": "a>=10 and a<=25 or a==47", "status": true},
+                {"index": 2, "text": "a<=10 and a>25 and a==47", "status": false},
+                {"index": 3, "text": "a<=10 or not(a>=25) or a!=47", "status": false}
+            ]
+        },
+        {
+            "title": "Bucles",
+            "question": "Cuantas veces itera este codigo?",
+            "code": "vueltas=0\nwhile vueltas<4:\n  print('Girando...')",
+            "response": [
+                {"index": 0, "text": "5", "status": false},
+                {"index": 1, "text": "4", "status": true},
+                {"index": 2, "text": "3", "status": false},
+                {"index": 3, "text": "45", "status": false}
+            ]
+        },
+        {
+            "title": "Bucles",
+            "question": "Cuantas veces itera este codigo?",
+            "code": "for vueltas in range(1,4):\n  print('Girando...')",
+            "response": [
+                {"index": 0, "text": "5", "status": false},
+                {"index": 1, "text": "4", "status": false},
+                {"index": 2, "text": "3", "status": true},
+                {"index": 3, "text": "2", "status": false}
+            ]
+        },
+        {
+            "title": "Bucles",
+            "question": "Cuantas veces itera este codigo?",
+            "code": "for vueltas in range(14,7,-2):\n  print('Girando...')",
+            "response": [
+                {"index": 0, "text": "5", "status": false},
+                {"index": 1, "text": "4", "status": true},
+                {"index": 2, "text": "3", "status": false},
+                {"index": 3, "text": "2", "status": false}
+            ]
+        },
+        {
+            "title": "Listas",
+            "question": "Como queda la lista primeros?",
+            "code": "lis=[1, 23, 4, 9, 66, 108]\nprimeros=[]\nsegundos=[]\nfor n in lis:\n if n%2 != 0:\n  primeros.append(n)\n else:\n  segundos.append(n)\n  primeros += segundos",
+            "response": [
+                {"index": 0, "text": "[4, 66, 108, 1, 23, 9]", "status": false},
+                {"index": 1, "text": "[1, 23, 9, 4, 66, 108]", "status": true},
+                {"index": 2, "text": "[4, 66, 108]", "status": false},
+                {"index": 3, "text": "[1, 23, 9]", "status": false}
+            ]
+        },
+        {
+            "title": "Funciones",
+            "question": "Que hace la funcion elige()?",
+            "code": "def elige(dicci):\n print('Selecciona')\nfor op in dicci:\n  print(op,'-', dicci[op])\nseleccion=input()\nwhile seleccion not in dicci:\n  seleccion=input()\nreturn seleccion\n\nmenu={'1':'Pasta',\n'2':'Pollo',\n'3':'Carne',\n'4':'Veggie'}\nopc=elige(menu)\nprint('Elegiste', menu[opc])",
+            "response": [
+                {"index": 0, "text": "Imprime tipos de comida, ordenadas por y con numero y se puede elegir una", "status": true},
+                {"index": 1, "text": "Imprime tipos de comida y se puede elegir una", "status": false},
+                {"index": 2, "text": "Imprime tipos de comida, desordenadas y se puede elegir una", "status": false},
+                {"index": 3, "text": "Imprime tipos de comida", "status": false}
+            ]
+        },
+        {
+            "title": "Listas",
+            "question": "Que se imprime luego de ejecutar el codigo?",
+            "code": "lista = [2, 4, 6, 8]\nprint(lista[1:3])",
+            "response": [
+                {"index": 0, "text": "[4, 8]", "status": false},
+                {"index": 1, "text": "[6, 8]", "status": false},
+                {"index": 2, "text": "[4, 6]", "status": true},
+                {"index": 3, "text": "[2, 6]", "status": false}
+            ]
+        },
+        {
+            "title": "Cadenas de Texto",
+            "question": "¿Cuál es la forma correcta de concatenar las variables texto1 y texto2?",
+            "code": "texto1 = 'Hola'\ntexto2 = 'Mundo'\nresultado = texto1 + ' ' + texto2",
+            "response": [
+                {"index": 0, "text": "'Hola Mundo'", "status": false},
+                {"index": 1, "text": "'HolaMundo'", "status": false},
+                {"index": 2, "text": "'Hola Mundo'", "status": true},
+                {"index": 3, "text": "'Hola', 'Mundo'", "status": false}
+            ]
+        },
+        {
+            "title": "Diccionarios",
+            "question": "¿Cómo se agrega un nuevo elemento con la clave 'Ciudad' y valor 'New York' al diccionario 'info'?",
+            "code": "info = {'Nombre': 'Juan', 'Edad': 25}\n# Agregar nuevo elemento\ninfo['Ciudad'] = 'New York'",
+            "response": [
+                {"index": 0, "text": "info['Ciudad'] = 'New York'", "status": true},
+                {"index": 1, "text": "info.add('Ciudad', 'New York')", "status": false},
+                {"index": 2, "text": "info.append('Ciudad', 'New York')", "status": false},
+                {"index": 3, "text": "info.insert('Ciudad', 'New York')", "status": false}
+            ]
+        },
+        {
+            "title": "Manejo de Excepciones",
+            "question": "¿Cuál es la función del bloque 'except' en el manejo de excepciones?",
+            "code": "try:\n    resultado = 10 / 0\nexcept ZeroDivisionError:\n    print('Error: División por cero')",
+            "response": [
+                {"index": 0, "text": "Manejar la excepción y continuar con la ejecución del programa.", "status": true},
+                {"index": 1, "text": "Evitar que se produzca la excepción.", "status": false},
+                {"index": 2, "text": "Detener la ejecución del programa.", "status": false},
+                {"index": 3, "text": "Imprimir un mensaje de error sin manejar la excepción.", "status": false}
+            ]
+        },
+        {
+            "title": "Manejo de Archivos",
+            "question": "¿Qué hace el siguiente código?",
+            "code": "with open('datos.txt', 'r') as archivo:\n    lineas = archivo.readlines()\n    cantidad_lineas = len(lineas)",
+            "response": [
+                {"index": 0, "text": "Abre el archivo en modo lectura y cuenta las líneas en el archivo.", "status": true},
+                {"index": 1, "text": "Crea un nuevo archivo llamado 'datos.txt' y escribe en él.", "status": false},
+                {"index": 2, "text": "Borra el archivo 'datos.txt'.", "status": false},
+                {"index": 3, "text": "Imprime el contenido del archivo 'datos.txt'.", "status": false}
+            ]
+        }
+    ]
+}
